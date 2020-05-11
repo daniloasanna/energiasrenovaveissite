@@ -1,0 +1,157 @@
+*{
+    margin: 0; padding: 0; font-size: 100%;
+    border: none; outline: 100%; box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #CEE3F6;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* ---CABECALHO--- */
+
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    background: linear-gradient(to right, #0099ff, #0044ff);
+    position: fixed;
+}
+.bt-menu{
+    float: right;
+    color: #fff;
+    text-align: center;
+}
+
+.cb-menu{
+    display: none;
+}
+
+.cb-menu:checked + .menu{
+    display: block;
+}
+
+/* ---MENU--- */
+.menu{
+    display: none;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+    list-style: none;
+}
+.menu li{
+    padding: 2%;
+}
+.menu li a{
+    color: #fff;
+    padding: 2%;
+}
+.menu li a:hover{
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+/* ---CONTEÚDOS--- */
+.conteudos{
+    width: 100%;
+    padding: 3% 4%;
+    text-align: left;
+}
+.conteudo{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 100px;
+}
+.conteudo h1{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.conteudo h2{
+    font-size: 1.3em;
+    margin: 2% 0%;
+}
+.conteudo h3{
+    font-size: 1.2em;
+    margin: 3% 0%;
+}
+.conteudo p{
+    text-indent: 20px;
+    font-size: 1.1em;
+}
+.conteudo img{
+    margin-bottom: 5%;
+}
+.conteudo li{
+    font-size: 1em;
+}
+.conteudo ol{
+    margin-left: 3vh;
+}
+
+/* ---RODAPÉ--- */
+.rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    margin-top: 10%;
+    background: linear-gradient(to right, #0099ff, #0044ff);
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ---TABLET--- */
+@media screen and (min-width:700px){
+    .menu{
+        width: auto;
+        display: block;
+        position: static;
+        float: right;
+    }
+    .menu li{
+        float: left;
+        padding: 0;
+    }
+    .menu li a{
+        color: #fff;
+        font-size: 1.2em;
+        padding: 10px;
+        margin: 2px;
+        border: 1px solid none;
+    }
+    .menu li a:hover{
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+    .bt-menu{
+        display: none;
+    }
+
+    .conteudo{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* ---TELAS MAIORES--- */
+@media screen and (min-width:1050px){
+    .cabecalho{
+        height: 110px;
+    }
+    .conteudo{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
